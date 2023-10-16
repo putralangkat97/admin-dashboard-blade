@@ -34,7 +34,7 @@
                         @include('layouts.header')
                     </div>
 
-                    <div class="bg-gray-100">
+                    <div class="bg-gray-100 mt-10">
                         {{ $slot }}
                     </div>
                 </div>
