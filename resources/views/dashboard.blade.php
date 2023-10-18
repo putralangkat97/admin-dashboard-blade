@@ -5,50 +5,46 @@
         </h2>
     </x-slot>
 
-
-    <x-admin.panel title="dashboard panel">
-        <x-slot name="button">
-            <x-admin.button-panel href="#">Link</x-admin.button-panel>
-        </x-slot>
-
-        <div class="p-2">
-            <x-text-input id="search" class="block mb-3 w-64" type="text" name="search" placeholder="Search user" />
-            <table class="w-full shadow">
-                <thead class="text-left">
-                    <tr class="bg-gray-100 border-t border-l border-r">
-                        <th class="p-6">No.</th>
-                        <th class="p-6">Name</th>
-                        <th class="p-6">Role</th>
-                        <th class="p-6 text-center">Status</th>
-                        <th class="p-6 text-center"></th>
+    <div class="p-2">
+        <x-text-input id="search" class="block mb-3 w-full lg:w-64" type="text" name="search"
+            placeholder="Search user" />
+    </div>
+    <div class="p-2 overflow-x-auto">
+        <table class="w-full shadow">
+            <thead class="text-left">
+                <tr class="bg-zinc-900 border-t border-l border-r text-white">
+                    <th class="p-4 md:p-6 text-sm md:text-md">No.</th>
+                    <th class="p-4 md:p-6 text-sm md:text-md">Name</th>
+                    <th class="p-4 md:p-6 text-sm md:text-md">Role</th>
+                    <th class="p-4 md:p-6 text-center text-sm md:text-md">Status</th>
+                    <th class="p-4 md:p-6 text-center text-sm md:text-md"></th>
+                </tr>
+            </thead>
+            <tbody class="text-left">
+                @foreach ($users as $index => $user)
+                    <tr class="border-b border-r border-l hover:bg-gray-50">
+                        <td class="px-4 py-2 md:px-6 md:py-4">{{ $index + 1 . '.' }}</td>
+                        <td class="px-4 py-2 md:px-6 md:py-4">
+                            <div class="flex flex-col">
+                                <span class="font-medium text-gray-800 text-sm md:text-md">{{ $user->name }}</span>
+                                <span class="text-xs text-gray-500">+62822{{ rand(77243366, 99999999) }}</span>
+                            </div>
+                        </td>
+                        <td class="px-4 py-2 md:px-6 md:py-4">
+                            <span class="text-gray-800 font-medium text-sm md:text-md">Admin</span>
+                        </td>
+                        <td class="px-4 py-2 md:px-6 md:py-4 text-center">
+                            <span class="text-green-500 font-medium text-sm md:text-md">active</span>
+                        </td>
+                        <td class="px-4 py-2 md:px-6 md:py-4 text-center">
+                            <span class="text-sm md:text-md">Edit | Delete</span>
+                        </td>
                     </tr>
-                </thead>
-                <tbody class="text-left">
-                    @foreach ($users as $index => $user)
-                        <tr class="border-b border-r border-l hover:bg-gray-50">
-                            <td class="px-6 py-4">{{ $index + 1 . '.' }}</td>
-                            <td class="px-6 py-4">
-                                <div class="flex flex-col">
-                                    <span class="font-medium text-gray-800">{{ $user->name }}</span>
-                                    <span class="text-xs text-gray-500">+62822{{ rand(77243366, 99999999) }}</span>
-                                </div>
-                            </td>
-                            <td class="px-6 py-4">
-                                <span class="text-gray-800 font-medium">Admin</span>
-                            </td>
-                            <td class="px-6 py-4 text-center">
-                                <span class="text-green-500 font-medium">active</span>
-                            </td>
-                            <td class="px-6 py-4 text-center">
-                                <span>Edit | Delete</span>
-                            </td>
-                        </tr>
-                    @endforeach
-                </tbody>
-            </table>
-            <div class="mt-3">
-                {{ $users->links() }}
-            </div>
-        </div>
-    </x-admin.panel>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+    <div class="p-2">
+        {{ $users->links() }}
+    </div>
 </x-app-layout>

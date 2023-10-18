@@ -22,7 +22,7 @@
         {{-- sidebar --}}
         @include('layouts.sidebar')
 
-        <main class="w-full lg:ml-80 mt-14 lg:mt-0 bg-gray-100 min-h-screen">
+        <main class="w-full lg:ml-80 mt-14 lg:mt-0 bg-white min-h-screen">
             <div class="py-6 md:py-8">
                 <div class="w-full mx-auto px-4 lg:px-8">
                     <div class="flex justify-between mt-6 lg:mt-0 mb-4">
@@ -34,7 +34,7 @@
                         @include('layouts.header')
                     </div>
 
-                    <div class="bg-gray-100 mt-10">
+                    <div class="mt-10">
                         {{ $slot }}
                     </div>
                 </div>
