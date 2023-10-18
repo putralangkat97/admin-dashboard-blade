@@ -20,10 +20,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    $users = User::where('id', '!=', Auth::user()->id)->paginate(10);
-    return view('dashboard', ['users' => $users]);
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', function () {
+        $users = User::where('id', '!=', Auth::user()->id)->paginate(10);
+        return view('dashboard', ['users' => $users]);
+    })->name('dashboard');
+
+    Route::get('/table', function () {
+        $users = User::where('id', '!=', Auth::user()->id)->paginate(10);
+        return view('admin/table', ['users' => $users]);
+    })->name('table');
+
+    Route::get('/accordion', function () {
+        return view('admin/accordion');
+    })->name('accordion');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -1,4 +1,4 @@
-<aside class="fixed lg:flex flex-col lg:flex-row lg:min-h-screen w-full lg:w-80 bg-zinc-900">
+<aside class="fixed lg:flex flex-col lg:flex-row lg:min-h-screen w-full lg:w-80 bg-zinc-900 z-50 lg:z-0">
     <div @click.away="open = false" class="flex flex-col w-full text-white flex-shrink-0 border-b lg:border-0"
         x-data="{ open: false }">
         <div
@@ -25,6 +25,14 @@
             <a href="{{ route('dashboard') }}"
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('dashboard') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                 <span class="font-semibold">Dashboard</span>
+            </a>
+            <a href="{{ route('table') }}"
+                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('table') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                <span class="font-semibold">Table</span>
+            </a>
+            <a href="{{ route('accordion') }}"
+                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('accordion') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                <span class="font-semibold">Accordion</span>
             </a>
             <a href="{{ route('profile.edit') }}"
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300  {{ request()->routeIs('profile.edit') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
