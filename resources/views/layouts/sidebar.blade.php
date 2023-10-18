@@ -26,10 +26,6 @@
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('dashboard') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                 <span class="font-semibold">Dashboard</span>
             </a>
-            <a href="{{ route('table') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('table') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Table</span>
-            </a>
             <a href="{{ route('accordion') }}"
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('accordion') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                 <span class="font-semibold">Accordion</span>
@@ -50,18 +46,22 @@
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('buttons') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                 <span class="font-semibold">Buttons</span>
             </a>
-            <a href="{{ route('profile.edit') }}"
+            <a href="{{ route('table') }}"
+                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('table') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                <span class="font-semibold">Table</span>
+            </a>
+            {{-- <a href="{{ route('profile.edit') }}"
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300  {{ request()->routeIs('profile.edit') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                 <span class="font-semibold">Profile</span>
-            </a>
+            </a> --}}
             <div class="lg:hidden flex-grow mt-6 lg:mt-0">
                 <span class="text-white text-sm">{{ Auth::user()->name }}</span>
-                {{-- <div class="flex flex-row items-center mb-3 text-gray-900 hover:text-zinc-500 mt-2">
-                    <a href="{{ route('profile.edit') }}">
+                <div class="flex flex-row items-center text-white hover:text-white mt-2">
+                    <a href="{{ route('profile.edit') }}" class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 text-white font-semibold w-full {{ request()->routeIs('profile.*') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                         <span>Profile</span>
                     </a>
-                </div> --}}
-                <div class="flex flex-row items-center mb-3 text-white hover:text-white mt-2">
+                </div>
+                <div class="flex flex-row items-center mb-3 text-white hover:text-white">
                     <form method="POST" action="{{ route('logout') }}" class="w-full">
                         @csrf
                         <a href="#"
