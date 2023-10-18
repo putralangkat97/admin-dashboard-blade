@@ -38,6 +38,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/alerts', function () {
         return view('admin/alerts');
     })->name('alerts');
+
+    Route::get('/avatars', function () {
+        return view('admin/avatars');
+    })->name('avatars');
 });
 
 Route::middleware('auth')->group(function () {
