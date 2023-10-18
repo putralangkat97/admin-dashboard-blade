@@ -6,7 +6,7 @@
     </x-slot>
 
     <h1 class="mb-3">Rounded</h1>
-    <div class="p-6 space-x-4 bg-gray-100 mb-8">
+    <div class="p-6 space-x-4 border mb-8">
         <img class="inline-block h-8 w-8 rounded-lg ring-2 ring-white"
             src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
             alt="Image Description" />
@@ -22,7 +22,7 @@
     </div>
 
     <h1 class="mb-3">Rounded With Indicator Top</h1>
-    <div class="p-6 space-x-4 bg-gray-100 mb-8">
+    <div class="p-6 space-x-4 border mb-8">
         <div class="relative inline-block">
             <img class="inline-block h-8 w-8 rounded-lg ring-2 ring-white"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
@@ -54,7 +54,7 @@
     </div>
 
     <h1 class="mb-3">Rounded With Indicator Bottom</h1>
-    <div class="p-6 space-x-4 bg-gray-100 mb-8">
+    <div class="p-6 space-x-4 border mb-8">
         <div class="relative inline-block">
             <img class="inline-block h-8 w-8 rounded-lg ring-2 ring-white"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
@@ -86,7 +86,7 @@
     </div>
 
     <h1 class="mb-3">Rounded Full</h1>
-    <div class="p-6 space-x-4 bg-gray-100 mb-8">
+    <div class="p-6 space-x-4 border mb-8">
         <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white"
             src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
             alt="Image Description" />
@@ -102,7 +102,7 @@
     </div>
 
     <h1 class="mb-3">Rounded Full With Indicator Top</h1>
-    <div class="p-6 space-x-4 bg-gray-100 mb-8">
+    <div class="p-6 space-x-4 border mb-8">
         <div class="relative inline-block">
             <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
@@ -131,7 +131,7 @@
     </div>
 
     <h1 class="mb-3">Rounded Full With Indicator Bottom</h1>
-    <div class="p-6 space-x-4 bg-gray-100 mb-8">
+    <div class="p-6 space-x-4 border mb-8">
         <div class="relative inline-block">
             <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
@@ -163,8 +163,8 @@
     </div>
 
     <h1 class="mb-3">Rounded Full Placeholder</h1>
-    <div class="p-6 flex items-center space-x-4 bg-gray-100 mb-8">
-        <span class="inline-block h-8 w-8 bg-gray-100 rounded-full overflow-hidden">
+    <div class="p-6 flex items-center space-x-4 border mb-8">
+        <span class="inline-block h-8 w-8 border rounded-full overflow-hidden">
             <svg class="h-full w-full text-gray-300" width="16" height="16" viewBox="0 0 16 16"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.62854" y="0.359985" width="15" height="15" rx="7.5" fill="white" />
@@ -176,7 +176,7 @@
                     fill="currentColor" />
             </svg>
         </span>
-        <span class="inline-block h-12 w-12 bg-gray-100 rounded-full overflow-hidden">
+        <span class="inline-block h-12 w-12 border rounded-full overflow-hidden">
             <svg class="h-full w-full text-gray-300" width="16" height="16" viewBox="0 0 16 16"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.62854" y="0.359985" width="15" height="15" rx="7.5" fill="white" />
@@ -188,7 +188,7 @@
                     fill="currentColor" />
             </svg>
         </span>
-        <span class="inline-block h-16 w-16 bg-gray-100 rounded-full overflow-hidden">
+        <span class="inline-block h-16 w-16 border rounded-full overflow-hidden">
             <svg class="h-full w-full text-gray-300" width="16" height="16" viewBox="0 0 16 16"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.62854" y="0.359985" width="15" height="15" rx="7.5" fill="white" />
@@ -200,7 +200,7 @@
                     fill="currentColor" />
             </svg>
         </span>
-        <span class="inline-block h-20 w-20 bg-gray-100 rounded-full overflow-hidden">
+        <span class="inline-block h-20 w-20 border rounded-full overflow-hidden">
             <svg class="h-full w-full text-gray-300" width="16" height="16" viewBox="0 0 16 16"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.62854" y="0.359985" width="15" height="15" rx="7.5" fill="white" />
@@ -215,7 +215,7 @@
     </div>
 
     <h1 class="mb-3">Rounded Full Stacked</h1>
-    <div class="p-6 bg-gray-100 mb-8">
+    <div class="p-6 border mb-8">
         <div class="flex -space-x-2">
             <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"

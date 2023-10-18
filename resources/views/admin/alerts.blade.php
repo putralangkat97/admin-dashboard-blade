@@ -58,7 +58,7 @@
                     <span class="font-bold">Basic</span> alert! You should check in on some of those fields below.
                 </div>
                 <button @click="open = !open">
-                    <x-icons.close class="w-4 h-4 stroke-2 hover:stroke-gray-700" />
+                    <x-icons.close class="w-4 h-4 stroke-2 stroke-gray-600 hover:stroke-gray-600" />
                 </button>
             </div>
         </div>
@@ -69,7 +69,7 @@
                     <span class="font-bold">Blue</span> alert! You should check in on some of those fields below.
                 </div>
                 <button @click="open = !open">
-                    <x-icons.close class="w-4 h-4 stroke-2 hover:stroke-gray-700" />
+                    <x-icons.close class="w-4 h-4 stroke-2 stroke-blue-600 hover:stroke-blue-600" />
                 </button>
             </div>
         </div>
@@ -80,7 +80,7 @@
                     <span class="font-bold">Yellow</span> alert! You should check in on some of those fields below.
                 </div>
                 <button @click="open = !open">
-                    <x-icons.close class="w-4 h-4 stroke-2 hover:stroke-gray-700" />
+                    <x-icons.close class="w-4 h-4 stroke-2 stroke-yellow-600 hover:stroke-yellow-600" />
                 </button>
             </div>
         </div>
@@ -91,7 +91,7 @@
                     <span class="font-bold">Orange</span> alert! You should check in on some of those fields below.
                 </div>
                 <button @click="open = !open">
-                    <x-icons.close class="w-4 h-4 stroke-2 hover:stroke-gray-700" />
+                    <x-icons.close class="w-4 h-4 stroke-2 stroke-orange-600 hover:stroke-orange-600" />
                 </button>
             </div>
         </div>
@@ -102,7 +102,7 @@
                     <span class="font-bold">Red</span> alert! You should check in on some of those fields below.
                 </div>
                 <button @click="open = !open">
-                    <x-icons.close class="w-4 h-4 stroke-2 hover:stroke-gray-700" />
+                    <x-icons.close class="w-4 h-4 stroke-2 stroke-red-600 hover:stroke-red-600" />
                 </button>
             </div>
         </div>
@@ -113,7 +113,7 @@
                     <span class="font-bold">Red</span> alert! You should check in on some of those fields below.
                 </div>
                 <button @click="open = !open">
-                    <x-icons.close class="w-4 h-4 stroke-2 hover:stroke-gray-700" />
+                    <x-icons.close class="w-4 h-4 stroke-2 stroke-green-600 hover:stroke-green-700" />
                 </button>
             </div>
         </div>

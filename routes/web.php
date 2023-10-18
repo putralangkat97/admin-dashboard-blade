@@ -22,26 +22,33 @@ Route::get('/', function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {
-        $users = User::where('id', '!=', Auth::user()->id)->paginate(10);
-        return view('dashboard', ['users' => $users]);
+        return view('dashboard');
     })->name('dashboard');
 
-    Route::get('/table', function () {
-        $users = User::where('id', '!=', Auth::user()->id)->paginate(10);
-        return view('admin/table', ['users' => $users]);
-    })->name('table');
-
+    // A
     Route::get('/accordion', function () {
         return view('admin/accordion');
     })->name('accordion');
-
     Route::get('/alerts', function () {
         return view('admin/alerts');
     })->name('alerts');
-
     Route::get('/avatars', function () {
         return view('admin/avatars');
     })->name('avatars');
+
+    // B
+    Route::get('/badges', function () {
+        return view('admin/badges');
+    })->name('badges');
+    Route::get('/buttons', function () {
+        return view('admin/buttons');
+    })->name('buttons');
+
+    // T
+    Route::get('/table', function () {
+        $users = User::where('id', '!=', Auth::user()->id)->paginate(5);
+        return view('admin/table', ['users' => $users]);
+    })->name('table');
 });
 
 Route::middleware('auth')->group(function () {
