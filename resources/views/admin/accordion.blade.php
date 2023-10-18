@@ -5,9 +5,9 @@
         </h2>
     </x-slot>
 
-    <div class="h-screen grid grid-cols-1 md:grid-cols-2 gap-4 justify-center mb-10">
+    <div class="h-screen grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
         {{-- smooth accordion --}}
-        <div class="">
+        <div class="mb-5">
             <h1 class="font-medium max-w-xl pb-4">Basic Accordion</h1>
             <div class="bg-white max-w-xl border border-gray-200" x-data="{ selected: 1 }">
                 <ul class="shadow-box">
@@ -90,7 +90,7 @@
         </div>
 
         {{-- smooth collapse --}}
-        <div class="">
+        <div class="mb-5">
             <h1 class="font-medium max-w-xl pb-4">Collapse Accordion</h1>
             <div class="bg-white max-w-xl border border-gray-200">
                 <ul class="shadow-box">
@@ -173,7 +173,7 @@
         </div>
 
         {{-- smooth accordion with icon --}}
-        <div class="">
+        <div class="mb-5">
             <h1 class="font-medium max-w-xl pb-4">Basic Accordion With Icon</h1>
             <div class="bg-white max-w-xl border border-gray-200" x-data="{ selected: null }">
                 <ul class="shadow-box">
@@ -262,7 +262,7 @@
         </div>
 
         {{-- smooth collapse with icon --}}
-        <div class="">
+        <div class="mb-5">
             <h1 class="font-medium max-w-xl pb-4">Collapse Accordion With Icon</h1>
             <div class="bg-white max-w-xl border border-gray-200">
                 <ul class="shadow-box">
@@ -351,7 +351,7 @@
         </div>
 
         {{-- smooth accordion with colour gray --}}
-        <div class="">
+        <div class="mb-5">
             <h1 class="font-medium max-w-xl pb-4">Basic Accordion with Colour</h1>
             <div class="bg-white max-w-xl border border-gray-200" x-data="{ selected: null }">
                 <ul class="shadow-box">
@@ -440,7 +440,7 @@
         </div>
 
         {{-- smooth collapse with colour black --}}
-        <div class="">
+        <div class="mb-5">
             <h1 class="font-medium max-w-xl pb-4">Collapse Accordion With Colour</h1>
             <div class="bg-white max-w-xl border border-gray-200">
                 <ul class="shadow-box">
@@ -529,7 +529,7 @@
         </div>
 
         {{-- smooth accordion with colour black --}}
-        <div class="">
+        <div class="mb-5">
             <h1 class="font-medium max-w-xl pb-4">Basic Accordion with Colour</h1>
             <div class="bg-white max-w-xl border border-gray-200" x-data="{ selected: null }">
                 <ul class="shadow-box">
@@ -621,7 +621,7 @@
         </div>
 
         {{-- smooth collapse with colour black --}}
-        <div class="">
+        <div class="mb-5">
             <h1 class="font-medium max-w-xl pb-4">Collapse Accordion With Colour</h1>
             <div class="bg-white max-w-xl border border-gray-200">
                 <ul class="shadow-box">

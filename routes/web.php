@@ -34,6 +34,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/accordion', function () {
         return view('admin/accordion');
     })->name('accordion');
+
+    Route::get('/alerts', function () {
+        return view('admin/alerts');
+    })->name('alerts');
 });
 
 Route::middleware('auth')->group(function () {
