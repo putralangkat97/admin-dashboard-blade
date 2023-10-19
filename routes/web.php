@@ -44,6 +44,11 @@ Route::middleware(['auth'])->group(function () {
         return view('admin/buttons');
     })->name('buttons');
 
+    // C
+    Route::get('/cards', function () {
+        return view('admin/cards');
+    })->name('cards');
+
     // T
     Route::get('/table', function () {
         $users = User::where('id', '!=', Auth::user()->id)->paginate(5);
