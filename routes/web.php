@@ -54,6 +54,11 @@ Route::middleware(['auth'])->group(function () {
         return view('admin/lists');
     })->name('lists');
 
+    // L
+    Route::get('/progress', function () {
+        return view('admin/progress');
+    })->name('progress');
+
     // T
     Route::get('/table', function () {
         $users = User::where('id', '!=', Auth::user()->id)->paginate(5);
