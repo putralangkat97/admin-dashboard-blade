@@ -62,6 +62,11 @@ Route::middleware(['auth'])->group(function () {
         return view('admin/placeholders');
     })->name('placeholders');
 
+    // S
+    Route::get('/spiners', function () {
+        return view('admin/spiners');
+    })->name('spiners');
+
     // T
     Route::get('/table', function () {
         $users = User::where('id', '!=', Auth::user()->id)->paginate(5);
