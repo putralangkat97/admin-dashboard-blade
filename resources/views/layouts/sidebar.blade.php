@@ -1,8 +1,8 @@
-<aside class="lg:flex flex-col lg:flex-row lg:min-h-screen w-full lg:w-96 bg-zinc-900 z-50 lg:z-0">
+<aside class="lg:fixed lg:flex flex-col lg:flex-row lg:h-screen w-full lg:w-80 bg-zinc-900 z-50 lg:z-0 lg:overflow-y-auto">
     <div @click.away="open = false" class="flex flex-col w-full text-white flex-shrink-0 border-b lg:border-0"
         x-data="{ open: false }">
         <div
-            class="flex-shrink-0 px-8 lg:px-2 text-left py-4 lg:py-8 flex flex-row lg:flex-col gap-4 items-center justify-between">
+            class="flex-shrink-0 px-8 lg:px-2 text-left pt-4 pb-4 lg:pt-8 lg:pb-4 flex flex-row lg:flex-col gap-4 items-center justify-between">
             <x-application-logo class="w-14 h-14 lg:w-20 lg:h-20 inline -mt-1 mr-3 fill-white" />
             <a href="{{ route('dashboard') }}"
                 class="hidden lg:block text-sm text-center lg:text-lg font-medium tracking-widest uppercase text-white focus:outline-none focus:shadow-outline">
@@ -20,74 +20,81 @@
             </button>
         </div>
         <nav :class="{ 'block': open, 'hidden': !open }"
-            class="flex-grow items-left lg:block px-3 pb-4 lg:pb-0 lg:overflow-y-auto lg:mb-6">
-            <span class="ml-1 text-gray-500 text-sm">Components</span>
-            <a href="{{ route('dashboard') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('dashboard') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Dashboard</span>
-            </a>
-            <a href="{{ route('accordion') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('accordion') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Accordion</span>
-            </a>
-            <a href="{{ route('alerts') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('alerts') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Alerts</span>
-            </a>
-            <a href="{{ route('avatars') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('avatars') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Avatars</span>
-            </a>
-            <a href="{{ route('badges') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('badges') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Badges</span>
-            </a>
-            <a href="{{ route('buttons') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('buttons') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Buttons</span>
-            </a>
-            <a href="{{ route('cards') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('cards') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Cards</span>
-            </a>
-            <a href="{{ route('lists') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('lists') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Lists</span>
-            </a>
-            <a href="{{ route('placeholders') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('placeholders') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Placeholders</span>
-            </a>
-            <a href="{{ route('progress') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('progress') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Progress</span>
-            </a>
-            <a href="{{ route('spiners') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('spiners') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Spiners</span>
-            </a>
-            <a href="{{ route('toasts') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('toasts') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Toasts</span>
-            </a>
-            <span class="ml-1 text-gray-500 text-sm">Navigations</span>
-            <a href="{{ route('breadcrumb') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('breadcrumb') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Breadcrumb</span>
-            </a>
-            <a href="{{ route('tabs') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('tabs') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Tabs</span>
-            </a>
-            <span class="ml-1 text-gray-500 text-sm">Table</span>
-            <a href="{{ route('table') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('table') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Table</span>
-            </a>
+            class="flex-grow items-left lg:block px-3 pb-0 lg:pb-8">
+            <div class="ml-1 text-gray-500 text-sm mt-4">Components</div>
+            <div class="space-y-3 mb-4">
+                <a href="{{ route('dashboard') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('dashboard') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Dashboard</span>
+                </a>
+                <a href="{{ route('accordion') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('accordion') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Accordion</span>
+                </a>
+                <a href="{{ route('alerts') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('alerts') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Alerts</span>
+                </a>
+                <a href="{{ route('avatars') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('avatars') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Avatars</span>
+                </a>
+                <a href="{{ route('badges') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('badges') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Badges</span>
+                </a>
+                <a href="{{ route('buttons') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('buttons') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Buttons</span>
+                </a>
+                <a href="{{ route('cards') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('cards') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Cards</span>
+                </a>
+                <a href="{{ route('lists') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('lists') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Lists</span>
+                </a>
+                <a href="{{ route('placeholders') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('placeholders') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Placeholders</span>
+                </a>
+                <a href="{{ route('progress') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('progress') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Progress</span>
+                </a>
+                <a href="{{ route('spiners') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('spiners') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Spiners</span>
+                </a>
+                <a href="{{ route('toasts') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('toasts') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Toasts</span>
+                </a>
+            </div>
+            <div class="ml-1 text-gray-500 text-sm mt-4">Navigations</div>
+            <div class="space-y-3 mb-4">
+                <a href="{{ route('breadcrumb') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('breadcrumb') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Breadcrumb</span>
+                </a>
+                <a href="{{ route('tabs') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('tabs') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Tabs</span>
+                </a>
+            </div>
+            <div class="ml-1 text-gray-500 text-sm mt-4">Table</div>
+            <div class="space-y-3 mb-4">
+                <a href="{{ route('table') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('table') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Table</span>
+                </a>
+            </div>
             <div class="lg:hidden flex-grow mt-6 lg:mt-0">
                 <span class="text-white text-sm">{{ Auth::user()->name }}</span>
                 <div class="flex flex-row items-center text-white hover:text-white mt-2">
-                    <a href="{{ route('profile.edit') }}" class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 text-white font-semibold w-full {{ request()->routeIs('profile.*') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <a href="{{ route('profile.edit') }}"
+                        class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 text-white font-semibold w-full {{ request()->routeIs('profile.*') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                         <span>Profile</span>
                     </a>
                 </div>

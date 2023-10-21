@@ -22,7 +22,7 @@
         {{-- sidebar --}}
         @include('layouts.sidebar')
 
-        <main class="w-full lg:mt-0 bg-white min-h-screen">
+        <main class="w-full lg:mt-0 lg:ml-80 bg-white min-h-screen">
             <div class="py-6 md:py-8">
                 <div class="w-full mx-auto px-4 lg:px-8">
                     <div class="flex justify-between mt-6 lg:mt-0 mb-4">
