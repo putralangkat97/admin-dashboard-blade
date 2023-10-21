@@ -54,10 +54,13 @@ Route::middleware(['auth'])->group(function () {
         return view('admin/lists');
     })->name('lists');
 
-    // L
+    // P
     Route::get('/progress', function () {
         return view('admin/progress');
     })->name('progress');
+    Route::get('/placeholders', function () {
+        return view('admin/placeholders');
+    })->name('placeholders');
 
     // T
     Route::get('/table', function () {
