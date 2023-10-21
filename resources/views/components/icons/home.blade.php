@@ -2,7 +2,7 @@
     'class' => '',
 ])
 
-<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000"
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
     fill="none" stroke-linecap="round" stroke-linejoin="round"
     {{ $attributes->merge(['class' => 'icon icon-tabler icon-tabler-home-2 ' . $class]) }}>
     <path stroke="none" d="M0 0h24v24H0z" fill="none" />

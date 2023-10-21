@@ -70,6 +70,11 @@
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('toasts') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                 <span class="font-semibold">Toasts</span>
             </a>
+            <span class="ml-1 text-gray-500 text-sm">Navigations</span>
+            <a href="{{ route('tabs') }}"
+                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('tabs') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                <span class="font-semibold">Tabs</span>
+            </a>
             <span class="ml-1 text-gray-500 text-sm">Table</span>
             <a href="{{ route('table') }}"
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('table') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">

@@ -68,6 +68,9 @@ Route::middleware(['auth'])->group(function () {
     })->name('spiners');
 
     // T
+    Route::get('/tabs', function () {
+        return view('admin/tabs');
+    })->name('tabs');
     Route::get('/table', function () {
         $users = User::where('id', '!=', Auth::user()->id)->paginate(5);
         return view('admin/table', ['users' => $users]);
