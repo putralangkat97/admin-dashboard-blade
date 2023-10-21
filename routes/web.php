@@ -21,10 +21,6 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-
     // A
     Route::get('/accordion', function () {
         return view('admin/accordion');
@@ -40,6 +36,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/badges', function () {
         return view('admin/badges');
     })->name('badges');
+    Route::get('/breadcrumb', function () {
+        return view('admin/breadcrumb');
+    })->name('breadcrumb');
     Route::get('/buttons', function () {
         return view('admin/buttons');
     })->name('buttons');
@@ -49,18 +48,23 @@ Route::middleware(['auth'])->group(function () {
         return view('admin/cards');
     })->name('cards');
 
+    // D
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
     // L
     Route::get('/lists', function () {
         return view('admin/lists');
     })->name('lists');
 
     // P
-    Route::get('/progress', function () {
-        return view('admin/progress');
-    })->name('progress');
     Route::get('/placeholders', function () {
         return view('admin/placeholders');
     })->name('placeholders');
+    Route::get('/progress', function () {
+        return view('admin/progress');
+    })->name('progress');
 
     // S
     Route::get('/spiners', function () {
@@ -68,13 +72,13 @@ Route::middleware(['auth'])->group(function () {
     })->name('spiners');
 
     // T
-    Route::get('/tabs', function () {
-        return view('admin/tabs');
-    })->name('tabs');
     Route::get('/table', function () {
         $users = User::where('id', '!=', Auth::user()->id)->paginate(5);
         return view('admin/table', ['users' => $users]);
     })->name('table');
+    Route::get('/tabs', function () {
+        return view('admin/tabs');
+    })->name('tabs');
     Route::get('/toasts', function () {
         return view('admin/toasts');
     })->name('toasts');

@@ -1,8 +1,8 @@
-<aside class="relative lg:flex flex-col lg:flex-row lg:min-h-screen w-full lg:w-96 bg-zinc-900 z-50 lg:z-0">
-    <div @click.away="open = false" class="flex flex-col w-full text-white flex-shrink-0 border-b lg:border-0 overflow-auto"
+<aside class="lg:flex flex-col lg:flex-row lg:min-h-screen w-full lg:w-96 bg-zinc-900 z-50 lg:z-0">
+    <div @click.away="open = false" class="flex flex-col w-full text-white flex-shrink-0 border-b lg:border-0"
         x-data="{ open: false }">
         <div
-            class="flex-shrink-0 px-8 lg:px-2 text-left py-4 lg:py-8 flex flex-row lg:flex-col gap-6 items-center justify-between">
+            class="flex-shrink-0 px-8 lg:px-2 text-left py-4 lg:py-8 flex flex-row lg:flex-col gap-4 items-center justify-between">
             <x-application-logo class="w-14 h-14 lg:w-20 lg:h-20 inline -mt-1 mr-3 fill-white" />
             <a href="{{ route('dashboard') }}"
                 class="hidden lg:block text-sm text-center lg:text-lg font-medium tracking-widest uppercase text-white focus:outline-none focus:shadow-outline">
@@ -20,7 +20,7 @@
             </button>
         </div>
         <nav :class="{ 'block': open, 'hidden': !open }"
-            class="flex-grow items-left lg:block px-3 pb-4 lg:pb-0 lg:overflow-y-auto mt-4 lg:mt-8 lg:mb-6">
+            class="flex-grow items-left lg:block px-3 pb-4 lg:pb-0 lg:overflow-y-auto lg:mb-6">
             <span class="ml-1 text-gray-500 text-sm">Components</span>
             <a href="{{ route('dashboard') }}"
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('dashboard') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
@@ -71,6 +71,10 @@
                 <span class="font-semibold">Toasts</span>
             </a>
             <span class="ml-1 text-gray-500 text-sm">Navigations</span>
+            <a href="{{ route('breadcrumb') }}"
+                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('breadcrumb') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                <span class="font-semibold">Breadcrumb</span>
+            </a>
             <a href="{{ route('tabs') }}"
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('tabs') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                 <span class="font-semibold">Tabs</span>
