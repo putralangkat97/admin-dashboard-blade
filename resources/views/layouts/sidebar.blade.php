@@ -1,5 +1,5 @@
-<aside class="fixed lg:flex flex-col lg:flex-row lg:min-h-screen w-full lg:w-80 bg-zinc-900 z-50 lg:z-0">
-    <div @click.away="open = false" class="flex flex-col w-full text-white flex-shrink-0 border-b lg:border-0"
+<aside class="relative lg:flex flex-col lg:flex-row lg:min-h-screen w-full lg:w-96 bg-zinc-900 z-50 lg:z-0">
+    <div @click.away="open = false" class="flex flex-col w-full text-white flex-shrink-0 border-b lg:border-0 overflow-auto"
         x-data="{ open: false }">
         <div
             class="flex-shrink-0 px-8 lg:px-2 text-left py-4 lg:py-8 flex flex-row lg:flex-col gap-6 items-center justify-between">
@@ -20,8 +20,8 @@
             </button>
         </div>
         <nav :class="{ 'block': open, 'hidden': !open }"
-            class="flex-grow items-left lg:block px-3 pb-4 lg:pb-0 lg:overflow-y-auto mt-4 lg:mt-8">
-            <span class="lg:hidden text-white text-sm">Menu</span>
+            class="flex-grow items-left lg:block px-3 pb-4 lg:pb-0 lg:overflow-y-auto mt-4 lg:mt-8 lg:mb-6">
+            <span class="ml-1 text-gray-500 text-sm">Components</span>
             <a href="{{ route('dashboard') }}"
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('dashboard') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                 <span class="font-semibold">Dashboard</span>
@@ -66,14 +66,15 @@
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('spiners') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                 <span class="font-semibold">Spiners</span>
             </a>
+            <a href="{{ route('toasts') }}"
+                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('toasts') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                <span class="font-semibold">Toasts</span>
+            </a>
+            <span class="ml-1 text-gray-500 text-sm">Table</span>
             <a href="{{ route('table') }}"
                 class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('table') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                 <span class="font-semibold">Table</span>
             </a>
-            {{-- <a href="{{ route('profile.edit') }}"
-                class="flex flex-row items-center mb-3 hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300  {{ request()->routeIs('profile.edit') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
-                <span class="font-semibold">Profile</span>
-            </a> --}}
             <div class="lg:hidden flex-grow mt-6 lg:mt-0">
                 <span class="text-white text-sm">{{ Auth::user()->name }}</span>
                 <div class="flex flex-row items-center text-white hover:text-white mt-2">
