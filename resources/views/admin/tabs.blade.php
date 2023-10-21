@@ -10,23 +10,23 @@
         <div class="w-80 border-b border-gray-200">
             <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
                 <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap hover:text-blue-500"
+                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-500"
                     :class="activeTab === 0 ? 'border-b-2 border-blue-500 text-blue-500' :
-                        'text-gray-500'"
+                        'text-gray-500 border-transparent'"
                     role="tab" @click="activeTab = 0">
                     Tab 1
                 </button>
                 <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap hover:text-blue-500"
+                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-500"
                     :class="activeTab === 1 ? 'border-b-2 border-blue-500 text-blue-500' :
-                        'text-gray-500'"
+                        'text-gray-500 border-transparent'"
                     role="tab" @click="activeTab = 1">
                     Tab 2
                 </button>
                 <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap hover:text-blue-500"
+                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-500"
                     :class="activeTab === 2 ? 'border-b-2 border-blue-500 text-blue-500' :
-                        'text-gray-500'"
+                        'text-gray-500 border-transparent'"
                     role="tab" @click="activeTab = 2">
                     Tab 3
                 </button>
@@ -59,22 +59,22 @@
         <div class="w-80 border-b border-gray-200">
             <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
                 <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap hover:text-blue-600"
-                    :class="activeTab === 0 ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 '"
+                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-600"
+                    :class="activeTab === 0 ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 border-transparent'"
                     role="tab" @click="activeTab = 0">
                     <x-icons.home class="w-4 h-4" x- />
                     Tab 1
                 </button>
                 <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap hover:text-blue-600"
-                    :class="activeTab === 1 ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 '"
+                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-600"
+                    :class="activeTab === 1 ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 border-transparent'"
                     role="tab" @click="activeTab = 1">
                     <x-icons.bell class="w-4 h-4" />
                     Tab 2
                 </button>
                 <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap hover:text-blue-600"
-                    :class="activeTab === 2 ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 '"
+                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-600"
+                    :class="activeTab === 2 ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 border-transparent'"
                     role="tab" @click="activeTab = 2">
                     <x-icons.gear class="w-4 h-4" />
                     Tab 3
@@ -106,27 +106,27 @@
         <div class="w-80 border-b border-gray-200">
             <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
                 <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap hover:text-blue-500"
+                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-500"
                     :class="activeTab === 0 ? 'border-b-2 border-blue-500 text-blue-500' :
-                        'text-gray-500'"
+                        'text-gray-500 border-transparent'"
                     role="tab" @click="activeTab = 0">
                     Inbox{{ ' ' }}
                     <span class="inline-flex items-center py-1 px-2 text-sm font-medium"
                         :class="activeTab === 0 ? 'text-blue-600 bg-blue-200' : 'text-gray-600 bg-gray-200'">99+</span>
                 </button>
                 <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap hover:text-blue-500"
+                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-500"
                     :class="activeTab === 1 ? 'border-b-2 border-blue-500 text-blue-500' :
-                        'text-gray-500'"
+                        'text-gray-500 border-transparent'"
                     role="tab" @click="activeTab = 1">
                     Promotion{{ ' ' }}
                     <span class="inline-flex items-center py-1 px-2 text-sm font-medium"
                         :class="activeTab === 1 ? 'text-blue-600 bg-blue-200' : 'text-gray-600 bg-gray-200'">10</span>
                 </button>
                 <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap hover:text-blue-500"
+                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-500"
                     :class="activeTab === 2 ? 'border-b-2 border-blue-500 text-blue-500' :
-                        'text-gray-500'"
+                        'text-gray-500 border-transparent'"
                     role="tab" @click="activeTab = 2">
                     Spam{{ ' ' }}
                     <span class="inline-flex items-center py-1 px-2 text-sm font-medium"
@@ -161,23 +161,23 @@
         <div class="w-80 border-b border-gray-200">
             <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
                 <button type="button"
-                    class="-mb-px py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center border-r border-l border-t hover:text-gray-700"
-                    :class="activeTab === 0 ? 'text-blue-500 border-blue-500 border-b-2 bg-blue-50' :
-                        'text-gray-500 border-gray-200 bg-gray-50'"
+                    class="-mb-px py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center hover:text-gray-700"
+                    :class="activeTab === 0 ? 'text-blue-500 border-blue-500 border-b-2 border-r border-l border-t bg-blue-50' :
+                        'text-gray-500 border-gray-200 bg-gray-50 border-r border-l border-t'"
                     @click="activeTab = 0" role="tab">
                     Tab 1
                 </button>
                 <button type="button"
-                    class="-mb-px py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center border-r border-l border-t hover:text-gray-700"
-                    :class="activeTab === 1 ? 'text-blue-500 border-blue-500 border-b-2 bg-blue-50' :
-                        'text-gray-500 border-gray-200 bg-gray-50'"
+                    class="-mb-px py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center hover:text-gray-700"
+                    :class="activeTab === 1 ? 'text-blue-500 border-blue-500 border-b-2 border-r border-l border-t bg-blue-50' :
+                        'text-gray-500 border-gray-200 bg-gray-50 border-r border-l border-t'"
                     @click="activeTab = 1" role="tab">
                     Tab 2
                 </button>
                 <button type="button"
-                    class="-mb-px py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center border-r border-l border-t hover:text-gray-700"
-                    :class="activeTab === 2 ? 'text-blue-500 border-blue-500 border-b-2 bg-blue-50' :
-                        'text-gray-500 border-gray-200 bg-gray-50'"
+                    class="-mb-px py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center hover:text-gray-700"
+                    :class="activeTab === 2 ? 'text-blue-500 border-blue-500 border-b-2 border-r border-l border-t bg-blue-50' :
+                        'text-gray-500 border-gray-200 bg-gray-50 border-r border-l border-t'"
                     @click="activeTab = 2" role="tab">
                     Tab 3
                 </button>

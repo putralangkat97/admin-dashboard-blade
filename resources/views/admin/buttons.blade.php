@@ -186,9 +186,9 @@
     </div>
 
     <h1 class="mb-3">Disabled</h1>
-    <div class="p-6 border space-x-4 mb-8">
+    <div class="p-6 border space-x-3 mb-8">
         <button type="button"
-            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-zinc-900 text-white hover:bg-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 transition-all text-sm disabled:opacity-75 cursor-not-allowed"
+            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-zinc-900 text-white focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 transition-all text-sm disabled:opacity-75 cursor-not-allowed"
             disabled>
             <div class="flex justify-between items-center">
                 <span class="mr-2">Black</span>
@@ -196,7 +196,7 @@
             </div>
         </button>
         <button type="button"
-            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 transition-all text-sm disabled:opacity-75 cursor-not-allowed"
+            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-blue-500 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 transition-all text-sm disabled:opacity-75 cursor-not-allowed"
             disabled>
             <div class="flex justify-between items-center">
                 <span class="mr-2">Blue</span>
@@ -204,7 +204,7 @@
             </div>
         </button>
         <button type="button"
-            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-yellow-500 text-white hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 transition-all text-sm disabled:opacity-75 cursor-not-allowed"
+            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-yellow-500 text-white focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 transition-all text-sm disabled:opacity-75 cursor-not-allowed"
             disabled>
             <div class="flex justify-between items-center">
                 <span class="mr-2">Yellow</span>
@@ -212,7 +212,7 @@
             </div>
         </button>
         <button type="button"
-            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-orange-500 text-white hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 transition-all text-sm disabled:opacity-75 cursor-not-allowed"
+            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-orange-500 text-white focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 transition-all text-sm disabled:opacity-75 cursor-not-allowed"
             disabled>
             <div class="flex justify-between items-center">
                 <span class="mr-2">Orange</span>
@@ -220,7 +220,7 @@
             </div>
         </button>
         <button type="button"
-            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-red-500 text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 transition-all text-sm disabled:opacity-75 cursor-not-allowed"
+            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-red-500 text-white focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 transition-all text-sm disabled:opacity-75 cursor-not-allowed"
             disabled>
             <div class="flex justify-between items-center">
                 <span class="mr-2">Red</span>
@@ -228,7 +228,7 @@
             </div>
         </button>
         <button type="button"
-            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-green-500 text-white hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 transition-all text-sm disabled:opacity-75 cursor-not-allowed"
+            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-green-500 text-white focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 transition-all text-sm disabled:opacity-75 cursor-not-allowed"
             disabled>
             <div class="flex justify-between items-center">
                 <span class="mr-2">Green</span>

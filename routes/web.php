@@ -53,6 +53,11 @@ Route::middleware(['auth'])->group(function () {
         return view('dashboard');
     })->name('dashboard');
 
+    // I
+    Route::get('/input', function () {
+        return view('admin/input');
+    })->name('input');
+
     // L
     Route::get('/lists', function () {
         return view('admin/lists');
