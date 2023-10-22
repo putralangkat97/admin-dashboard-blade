@@ -105,6 +105,10 @@
                     class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-radio') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Input Radio</span>
                 </a>
+                <a href="{{ route('input-select') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-select') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Input Select</span>
+                </a>
                 <a href="{{ route('input-switch') }}"
                     class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-switch') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Input Switch</span>
