@@ -69,6 +69,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/input-radio', function () {
         return view('admin/input-radio');
     })->name('input-radio');
+    Route::get('/input-switch', function () {
+        return view('admin/input-switch');
+    })->name('input-switch');
 
     // L
     Route::get('/lists', function () {
