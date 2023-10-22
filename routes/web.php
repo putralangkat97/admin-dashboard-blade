@@ -57,6 +57,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/input', function () {
         return view('admin/input');
     })->name('input');
+    Route::get('/input-group', function () {
+        return view('admin/input-group');
+    })->name('input-group');
 
     // L
     Route::get('/lists', function () {
