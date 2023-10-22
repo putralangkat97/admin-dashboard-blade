@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="pageTitle">
         <h2 class="font-semibold text-xl text-zinc-900 leading-tight">
-            {{ __('Input Group') }}
+            {{ __('Input File') }}
         </h2>
     </x-slot>
 
