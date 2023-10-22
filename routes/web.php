@@ -60,6 +60,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/input-group', function () {
         return view('admin/input-group');
     })->name('input-group');
+    Route::get('/input-file', function () {
+        return view('admin/input-file');
+    })->name('input-file');
 
     // L
     Route::get('/lists', function () {
