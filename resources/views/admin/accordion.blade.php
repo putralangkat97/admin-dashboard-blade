@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <h1 class="mb-3">Collapse Accordion</h1>
+    <h1 class="mb-3">Icon Accordion</h1>
     <div class="p-6 border mb-8" x-data="{ showCode2: false }">
         <div class="flex mb-3">
             <div class="flex bg-gray-100 transition p-2">
@@ -58,16 +58,16 @@
         </div>
         {{-- preview --}}
         <div x-show="!showCode2">
-            <x-accordions.accordion-collapse />
+            <x-accordions.accordion-default icon="true" />
         </div>
 
         {{-- code --}}
         <div x-show="showCode2">
-            <x-torchlight.accordion type="collapse" />
+            <x-torchlight.accordion type="icon" />
         </div>
     </div>
 
-    <h1 class="mb-3">Icon Accordion</h1>
+    <h1 class="mb-3">Basic Accordion with Colour</h1>
     <div class="p-6 border mb-8" x-data="{ showCode3: false }">
         <div class="flex mb-3">
             <div class="flex bg-gray-100 transition p-2">
@@ -89,16 +89,16 @@
         </div>
         {{-- preview --}}
         <div x-show="!showCode3">
-            <x-accordions.accordion-with-icon />
+            <x-accordions.accordion-default colour="gray" icon="true" />
         </div>
 
         {{-- code --}}
         <div x-show="showCode3">
-            <x-torchlight.accordion type="icon" />
+            <x-torchlight.accordion type="colour" />
         </div>
     </div>
 
-    <h1 class="mb-3">Collapse Accordion with Icon</h1>
+    <h1 class="mb-3">Collapse Accordion</h1>
     <div class="p-6 border mb-8" x-data="{ showCode4: false }">
         <div class="flex mb-3">
             <div class="flex bg-gray-100 transition p-2">
@@ -120,16 +120,16 @@
         </div>
         {{-- preview --}}
         <div x-show="!showCode4">
-            <x-accordions.accordion-collapse-with-icon />
+            <x-accordions.accordion-collapse />
         </div>
 
         {{-- code --}}
         <div x-show="showCode4">
-            <x-torchlight.accordion type="icon-collapse" />
+            <x-torchlight.accordion type="collapse" />
         </div>
     </div>
 
-    <h1 class="mb-3">Basic Accordion with Colour</h1>
+    <h1 class="mb-3">Collapse Accordion with Icon</h1>
     <div class="p-6 border mb-8" x-data="{ showCode5: false }">
         <div class="flex mb-3">
             <div class="flex bg-gray-100 transition p-2">
@@ -151,12 +151,12 @@
         </div>
         {{-- preview --}}
         <div x-show="!showCode5">
-            <x-accordions.accordion-with-colour />
+            <x-accordions.accordion-collapse icon="true" />
         </div>
 
         {{-- code --}}
         <div x-show="showCode5">
-            <x-torchlight.accordion type="colour" />
+            <x-torchlight.accordion type="icon-collapse" />
         </div>
     </div>
 
@@ -182,7 +182,7 @@
         </div>
         {{-- preview --}}
         <div x-show="!showCode6">
-            <x-accordions.accordion-collapse-with-colour />
+            <x-accordions.accordion-collapse colour="gray" icon="true" />
         </div>
 
         {{-- code --}}

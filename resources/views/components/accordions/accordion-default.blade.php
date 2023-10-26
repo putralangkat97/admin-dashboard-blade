@@ -1,11 +1,25 @@
-<div class="bg-white max-w-xl border border-gray-200" x-data="{ selected: 1 }">
+@props(['icon' => false, 'colour' => 'default'])
+
+<?php
+    $colour = match ($colour) {
+        'black' => 'bg-black text-white',
+        'gray' => 'bg-gray-100',
+        'default' => 'bg-white',
+    }
+?>
+
+<div class="bg-white max-w-xl border border-gray-200" x-data="{ selected: null }">
     <ul class="shadow-box">
         <li class="relative border-b border-gray-200">
-            <button type="button" class="w-full px-6 md:px-8 py-4 md:py-6 text-left"
+            <button type="button" class="{{ 'w-full px-6 md:px-8 py-4 md:py-6 text-left ' . $colour }}"
                 @click="selected !== 1 ? selected = 1 : selected = null">
                 <div class="flex items-center justify-between">
                     <span>
                         Should I use reCAPTCHA v2 or v3? </span>
+                    @if ($icon)
+                        <x-icons.plus class="w-4 h-4" x-show="selected != 1" />
+                        <x-icons.minus class="w-4 h-4" x-show="selected == 1" />
+                    @endif
                 </div>
             </button>
             <div class="relative overflow-hidden transition-all max-h-0 duration-300" style="" x-ref="container1"
@@ -24,11 +38,15 @@
             </div>
         </li>
         <li class="relative border-b border-gray-200">
-            <button type="button" class="w-full px-6 md:px-8 py-4 md:py-6 text-left"
+            <button type="button" class="{{ 'w-full px-6 md:px-8 py-4 md:py-6 text-left ' . $colour }}"
                 @click="selected !== 2 ? selected = 2 : selected = null">
                 <div class="flex items-center justify-between">
                     <span>
                         I'd like to run automated tests with reCAPTCHA. What should I do? </span>
+                    @if ($icon)
+                        <x-icons.plus class="w-4 h-4" x-show="selected != 2" />
+                        <x-icons.minus class="w-4 h-4" x-show="selected == 2" />
+                    @endif
                 </div>
             </button>
             <div class="relative overflow-hidden transition-all max-h-0 duration-300" style="" x-ref="container2"
@@ -42,11 +60,15 @@
             </div>
         </li>
         <li class="relative border-b border-gray-200">
-            <button type="button" class="w-full px-6 md:px-8 py-4 md:py-6 text-left"
+            <button type="button" class="{{ 'w-full px-6 md:px-8 py-4 md:py-6 text-left ' . $colour }}"
                 @click="selected !== 3 ? selected = 3 : selected = null">
                 <div class="flex items-center justify-between">
                     <span>
                         Can I run reCAPTCHA v2 and v3 on the same page? </span>
+                    @if ($icon)
+                        <x-icons.plus class="w-4 h-4" x-show="selected != 3" />
+                        <x-icons.minus class="w-4 h-4" x-show="selected == 3" />
+                    @endif
                 </div>
             </button>
             <div class="relative overflow-hidden transition-all max-h-0 duration-300" style="" x-ref="container3"
