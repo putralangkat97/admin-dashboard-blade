@@ -3,7 +3,7 @@
 ])
 
 <div class="flex mb-3">
-    <div class="flex bg-gray-100 transition p-2">
+    <div class="flex bg-gray-50 transition p-2">
         <nav class="flex space-x-2">
             <button type="button" class="py-3 px-4 inline-flex items-center gap-2 text-sm font-medium"
                 :class="{{ $eventName }} === false ? 'bg-blue-500 text-white hover:text-white' :
