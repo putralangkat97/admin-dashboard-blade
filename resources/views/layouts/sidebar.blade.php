@@ -121,6 +121,13 @@
                     <span class="font-semibold">Table</span>
                 </a>
             </div>
+            <div class="ml-1 text-gray-500 text-sm mt-4">Overlay</div>
+            <div class="space-y-3 mb-4">
+                <a href="{{ route('dropdowns') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('dropdowns') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Dropdown</span>
+                </a>
+            </div>
             <div class="lg:hidden flex-grow mt-6 lg:mt-0">
                 <span class="text-white text-sm">{{ Auth::user()->name }}</span>
                 <div class="flex flex-row items-center text-white hover:text-white mt-2">

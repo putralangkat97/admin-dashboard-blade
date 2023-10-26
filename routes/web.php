@@ -52,6 +52,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/dropdowns', function () {
+        return view('admin/dropdown');
+    })->name('dropdowns');
 
     // I
     Route::get('/input', function () {
