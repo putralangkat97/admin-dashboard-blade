@@ -1,7 +1,6 @@
 @props(['type' => ''])
 
 <?php
-    $style = "";
     $type = match ($type) {
         'default' => 'default',
         'collapse' => 'collapse',
