@@ -1,4 +1,3 @@
-
 <div class="w-1/2 bg-white border border-gray-200 text-gray-600 p-4" role="alert">
     <span class="font-bold">Basic</span> alert! You should check in on some of those fields below.
 </div>
