@@ -24,7 +24,7 @@ pre code.torchlight {
  Horizontal line padding.
 */
 pre code.torchlight .line {
-    @apply px-4;
+    @apply px-8;
 }
 
 /*

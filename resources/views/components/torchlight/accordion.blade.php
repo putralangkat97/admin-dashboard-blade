@@ -1,8 +1,8 @@
-@props(['type'])
+@props(['type' => ''])
 
 <?php
     $style = "";
-    $style = match ($type) {
+    $type = match ($type) {
         'default' => 'default',
         'collapse' => 'collapse',
         'icon' => 'with-icon',
@@ -12,6 +12,6 @@
     }
 ?>
 
-<pre class="bg-gray-800 h-[500px] overflow-y-scroll">
-    <x-torchlight-code language="blade" contents="{{ resource_path('example/accordions/accordion-' . $style . '.blade.php') }}" />
+<pre class="bg-gray-800 h-[500px] overflow-y-scroll whitespace-pre">
+    <x-torchlight-code language="blade" contents="{{ resource_path('example/accordions/accordion-' . $type . '.blade.php') }}" />
 </pre>

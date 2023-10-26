@@ -27,7 +27,7 @@
         </div>
         {{-- preview --}}
         <div x-show="!showCode">
-            <x-accordion-default />
+            <x-accordions.accordion-default />
         </div>
 
         {{-- code --}}
@@ -58,7 +58,7 @@
         </div>
         {{-- preview --}}
         <div x-show="!showCode2">
-            <x-accordion-collapse />
+            <x-accordions.accordion-collapse />
         </div>
 
         {{-- code --}}
@@ -89,7 +89,7 @@
         </div>
         {{-- preview --}}
         <div x-show="!showCode3">
-            <x-accordion-with-icon />
+            <x-accordions.accordion-with-icon />
         </div>
 
         {{-- code --}}
@@ -120,7 +120,7 @@
         </div>
         {{-- preview --}}
         <div x-show="!showCode4">
-            <x-accordion-collapse-with-icon />
+            <x-accordions.accordion-collapse-with-icon />
         </div>
 
         {{-- code --}}
@@ -151,7 +151,7 @@
         </div>
         {{-- preview --}}
         <div x-show="!showCode5">
-            <x-accordion-with-colour />
+            <x-accordions.accordion-with-colour />
         </div>
 
         {{-- code --}}
@@ -182,7 +182,7 @@
         </div>
         {{-- preview --}}
         <div x-show="!showCode6">
-            <x-accordion-collapse-with-colour />
+            <x-accordions.accordion-collapse-with-colour />
         </div>
 
         {{-- code --}}
