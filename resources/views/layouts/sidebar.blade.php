@@ -127,6 +127,10 @@
                     class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('dropdowns') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Dropdown</span>
                 </a>
+                <a href="{{ route('modals') }}"
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('modals') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
+                    <span class="font-semibold">Modal</span>
+                </a>
             </div>
             <div class="lg:hidden flex-grow mt-6 lg:mt-0">
                 <span class="text-white text-sm">{{ Auth::user()->name }}</span>

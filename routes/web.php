@@ -84,6 +84,11 @@ Route::middleware(['auth'])->group(function () {
         return view('admin/lists');
     })->name('lists');
 
+    // M
+    Route::get('/modals', function () {
+        return view('admin/modals');
+    })->name('modals');
+
     // P
     Route::get('/placeholders', function () {
         return view('admin/placeholders');
