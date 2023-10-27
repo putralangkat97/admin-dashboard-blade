@@ -5,53 +5,53 @@
         </h2>
     </x-slot>
 
-    <h1 class="mb-3">Basic Usage</h1>
-    <div class="p-6 border mb-8">
-        <button type="button"
-            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-zinc-900 text-white hover:bg-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 transition-all text-sm"
-            x-data @click="$dispatch('open-modal-1')">
-            Basic Modal
-        </button>
-        <x-modals.modal-default />
-    </div>
+    <x-content-base title="Basic Usage" eventName="showCode">
+        <x-tabs-preview-code />
+        <div x-show="!showCode">
+            <x-modal.basic />
+        </div>
+        <div x-show="showCode">
+            <x-torchlight.modal type="basic" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Modal Center</h1>
-    <div class="p-6 border mb-8">
-        <button type="button"
-            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-zinc-900 text-white hover:bg-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 transition-all text-sm"
-            x-data @click="$dispatch('open-modal-2')">
-            Center Modal
-        </button>
-        <x-modals.modal-center />
-    </div>
+    <x-content-base title="Modal Center" eventName="showCode2">
+        <x-tabs-preview-code eventName="showCode2" />
+        <div x-show="!showCode2">
+            <x-modal.center />
+        </div>
+        <div x-show="showCode2">
+            <x-torchlight.modal type="center" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Scroll Modal</h1>
-    <div class="p-6 border mb-8">
-        <button type="button"
-            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-zinc-900 text-white hover:bg-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 transition-all text-sm"
-            x-data @click="$dispatch('open-modal-3')">
-            Scroll Modal
-        </button>
-        <x-modals.modal-scroll />
-    </div>
+    <x-content-base title="Modal Scroll" eventName="showCode3">
+        <x-tabs-preview-code eventName="showCode3" />
+        <div x-show="!showCode3">
+            <x-modal.scroll />
+        </div>
+        <div x-show="showCode3">
+            <x-torchlight.modal type="scroll" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Scroll Modal Center</h1>
-    <div class="p-6 border mb-8">
-        <button type="button"
-            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-zinc-900 text-white hover:bg-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 transition-all text-sm"
-            x-data @click="$dispatch('open-modal-4')">
-            Scroll Modal Center
-        </button>
-        <x-modals.modal-center-scroll />
-    </div>
+    <x-content-base title="Modal Center with Scroll" eventName="showCode4">
+        <x-tabs-preview-code eventName="showCode4" />
+        <div x-show="!showCode4">
+            <x-modal.scroll-center />
+        </div>
+        <div x-show="showCode4">
+            <x-torchlight.modal type="scroll-center" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Prevent Outside Click</h1>
-    <div class="p-6 border mb-8">
-        <button type="button"
-            class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-zinc-900 text-white hover:bg-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 transition-all text-sm"
-            x-data @click="$dispatch('open-modal-5')">
-            Prevent Outside Click
-        </button>
-        <x-modals.modal-prevent-outside />
-    </div>
+    <x-content-base title="Prevent Outside Click" eventName="showCode5">
+        <x-tabs-preview-code eventName="showCode5" />
+        <div x-show="!showCode5">
+            <x-modal.prevent />
+        </div>
+        <div x-show="showCode5">
+            <x-torchlight.modal type="prevent" />
+        </div>
+    </x-content-base>
 </x-app-layout>
