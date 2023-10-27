@@ -1,5 +1,5 @@
 @props(['type' => ''])
 
-<pre class="bg-gray-800 max-h-md overflow-y-scroll whitespace-pre max-w-6xl">
+<pre class="bg-gray-800 h-[400px] overflow-y-scroll whitespace-pre max-w-6xl">
     <x-torchlight-code language="blade" contents="{{ resource_path('example/modal/' . $type . '.blade.php') }}" />
 </pre>
