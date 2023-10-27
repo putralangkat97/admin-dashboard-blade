@@ -5,47 +5,33 @@
         </h2>
     </x-slot>
 
-    <h1 class="mb-3">Basic Lists</h1>
-    <div class="p-6 border mb-8">
-        <ul class="list-disc list-inside text-gray-600">
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-        </ul>
-    </div>
+    <x-content-base title="Basic Usage" eventName="showCode">
+        <x-tabs-preview-code />
+        <div x-show="!showCode">
+            <x-lists.basic />
+        </div>
+        <div x-show="showCode">
+            <x-torchlight.list type="basic" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Horizontal Lists</h1>
-    <div class="p-6 border mb-8">
-        <ul class="list-disc list-inside text-gray-600 space-x-5">
-            <li class="inline-block">Home</li>
-            <li class="inline-block">About</li>
-            <li class="inline-block">FAQ</li>
-            <li class="inline-block">Contact us</li>
-        </ul>
-    </div>
+    <x-content-base title="Horizontal List" eventName="showCode2">
+        <x-tabs-preview-code eventName="showCode2" />
+        <div x-show="!showCode2">
+            <x-lists.horizontal />
+        </div>
+        <div x-show="showCode2">
+            <x-torchlight.list type="horizontal" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">List with Icon</h1>
-    <div class="p-6 border mb-8">
-        <ul class="space-y-3 text-sm">
-            <li class="flex space-x-3 items-center">
-              <x-icons.check class="w-6 h-6 text-blue-500" />
-              <span class="text-gray-600">
-                FAQ
-              </span>
-            </li>
-            <li class="flex space-x-3 items-center">
-              <x-icons.check class="w-6 h-6 text-blue-500" />
-              <span class="text-gray-600">
-                Home
-              </span>
-            </li>
-            <li class="flex space-x-3 items-center">
-              <x-icons.check class="w-6 h-6 text-blue-500" />
-              <span class="text-gray-600">
-                About
-              </span>
-            </li>
-        </ul>
-    </div>
+    <x-content-base title="Icon List" eventName="showCode3">
+        <x-tabs-preview-code eventName="showCode3" />
+        <div x-show="!showCode3">
+            <x-lists.icon />
+        </div>
+        <div x-show="showCode3">
+            <x-torchlight.list type="icon" />
+        </div>
+    </x-content-base>
 </x-app-layout>
