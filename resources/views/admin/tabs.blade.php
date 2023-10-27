@@ -5,344 +5,73 @@
         </h2>
     </x-slot>
 
-    <h1 class="mb-3">Basic Tabs</h1>
-    <div class="p-6 border mb-8" x-data="{ activeTab: 0 }">
-        <div class="w-80 border-b border-gray-200">
-            <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
-                <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-500"
-                    :class="activeTab === 0 ? 'border-b-2 border-blue-500 text-blue-500' :
-                        'text-gray-500 border-transparent'"
-                    role="tab" @click="activeTab = 0">
-                    Tab 1
-                </button>
-                <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-500"
-                    :class="activeTab === 1 ? 'border-b-2 border-blue-500 text-blue-500' :
-                        'text-gray-500 border-transparent'"
-                    role="tab" @click="activeTab = 1">
-                    Tab 2
-                </button>
-                <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-500"
-                    :class="activeTab === 2 ? 'border-b-2 border-blue-500 text-blue-500' :
-                        'text-gray-500 border-transparent'"
-                    role="tab" @click="activeTab = 2">
-                    Tab 3
-                </button>
-            </nav>
+    <x-content-base title="Basic Usage" eventName="showCode">
+        <x-tabs-preview-code />
+        <div x-show="!showCode">
+            <x-tabs.basic />
         </div>
-        <div class="mt-3">
-            <div :class="{ 'active': activeTab === 0 }" role="tabpanel" x-show="activeTab === 0"
-                x-transition:enter.opacity.duration.300>
-                <p class="text-gray-600">
-                    This is the <em class="font-semibold text-gray-800">first</em> item's tab body.
-                </p>
-            </div>
-            <div :class="{ 'active': activeTab === 0 }" role="tabpanel" x-show="activeTab === 1"
-                x-transition:enter.opacity.duration.300>
-                <p class="text-gray-600">
-                    This is the <em class="font-semibold text-gray-800">second</em> item's tab body.
-                </p>
-            </div>
-            <div :class="{ 'active': activeTab === 0 }" role="tabpanel" x-show="activeTab === 2"
-                x-transition:enter.opacity.duration.300>
-                <p class="text-gray-600">
-                    This is the <em class="font-semibold text-gray-800">third</em> item's tab body.
-                </p>
-            </div>
+        <div x-show="showCode">
+            <x-torchlight.tab type="basic" />
         </div>
-    </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Tabs with Icons</h1>
-    <div class="p-6 border mb-8" x-data="{ activeTab: 0 }">
-        <div class="w-80 border-b border-gray-200">
-            <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
-                <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-600"
-                    :class="activeTab === 0 ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 border-transparent'"
-                    role="tab" @click="activeTab = 0">
-                    <x-icons.home class="w-4 h-4" x- />
-                    Tab 1
-                </button>
-                <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-600"
-                    :class="activeTab === 1 ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 border-transparent'"
-                    role="tab" @click="activeTab = 1">
-                    <x-icons.bell class="w-4 h-4" />
-                    Tab 2
-                </button>
-                <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-600"
-                    :class="activeTab === 2 ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 border-transparent'"
-                    role="tab" @click="activeTab = 2">
-                    <x-icons.gear class="w-4 h-4" />
-                    Tab 3
-                </button>
-            </nav>
+    <x-content-base title="Tabs with Icon" eventName="showCode2">
+        <x-tabs-preview-code eventName="showCode2" />
+        <div x-show="!showCode2">
+            <x-tabs.icon />
         </div>
-
-        <div class="mt-3">
-            <div x-show="activeTab === 0" x-transition:enter.opacity.duration.300>
-                <p class="text-gray-600">
-                    This is the <em class="font-semibold text-gray-800">first</em> item's tab body.
-                </p>
-            </div>
-            <div x-show="activeTab === 1" x-transition:enter.opacity.duration.300>
-                <p class="text-gray-600">
-                    This is the <em class="font-semibold text-gray-800">second</em> item's tab body.
-                </p>
-            </div>
-            <div x-show="activeTab === 2" x-transition:enter.opacity.duration.300>
-                <p class="text-gray-600">
-                    This is the <em class="font-semibold text-gray-800">third</em> item's tab body.
-                </p>
-            </div>
+        <div x-show="showCode2">
+            <x-torchlight.tab type="icon" />
         </div>
-    </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Badge Tabs</h1>
-    <div class="p-6 border mb-8" x-data="{ activeTab: 0 }">
-        <div class="w-80 border-b border-gray-200">
-            <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
-                <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-500"
-                    :class="activeTab === 0 ? 'border-b-2 border-blue-500 text-blue-500' :
-                        'text-gray-500 border-transparent'"
-                    role="tab" @click="activeTab = 0">
-                    Inbox{{ ' ' }}
-                    <span class="inline-flex items-center py-1 px-2 text-sm font-medium"
-                        :class="activeTab === 0 ? 'text-blue-600 bg-blue-200' : 'text-gray-600 bg-gray-200'">99+</span>
-                </button>
-                <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-500"
-                    :class="activeTab === 1 ? 'border-b-2 border-blue-500 text-blue-500' :
-                        'text-gray-500 border-transparent'"
-                    role="tab" @click="activeTab = 1">
-                    Promotion{{ ' ' }}
-                    <span class="inline-flex items-center py-1 px-2 text-sm font-medium"
-                        :class="activeTab === 1 ? 'text-blue-600 bg-blue-200' : 'text-gray-600 bg-gray-200'">10</span>
-                </button>
-                <button type="button"
-                    class="py-4 px-1 inline-flex items-center gap-2 border-b-[3px] text-sm whitespace-nowrap hover:text-blue-500"
-                    :class="activeTab === 2 ? 'border-b-2 border-blue-500 text-blue-500' :
-                        'text-gray-500 border-transparent'"
-                    role="tab" @click="activeTab = 2">
-                    Spam{{ ' ' }}
-                    <span class="inline-flex items-center py-1 px-2 text-sm font-medium"
-                        :class="activeTab === 2 ? 'text-blue-600 bg-blue-200' : 'text-gray-600 bg-gray-200'">2</span>
-                </button>
-            </nav>
+    <x-content-base title="Tabs with Badge" eventName="showCode3">
+        <x-tabs-preview-code eventName="showCode3" />
+        <div x-show="!showCode3">
+            <x-tabs.badge />
         </div>
-        <div class="mt-3">
-            <div :class="{ 'active': activeTab === 0 }" role="tabpanel" x-show="activeTab === 0"
-                x-transition:enter.opacity.duration.300>
-                <p class="text-gray-600">
-                    This is the <em class="font-semibold text-gray-800">first</em> item's tab body.
-                </p>
-            </div>
-            <div :class="{ 'active': activeTab === 1 }" role="tabpanel" x-show="activeTab === 1"
-                x-transition:enter.opacity.duration.300>
-                <p class="text-gray-600">
-                    This is the <em class="font-semibold text-gray-800">second</em> item's tab body.
-                </p>
-            </div>
-            <div :class="{ 'active': activeTab === 2 }" role="tabpanel" x-show="activeTab === 2"
-                x-transition:enter.opacity.duration.300>
-                <p class="text-gray-600">
-                    This is the <em class="font-semibold text-gray-800">third</em> item's tab body.
-                </p>
-            </div>
+        <div x-show="showCode3">
+            <x-torchlight.tab type="badge" />
         </div>
-    </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Card Type</h1>
-    <div class="p-6 border mb-8" x-data="{ activeTab: 0 }">
-        <div class="w-80 border-b border-gray-200">
-            <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
-                <button type="button"
-                    class="-mb-px py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center hover:text-gray-700"
-                    :class="activeTab === 0 ? 'text-blue-500 border-blue-500 border-b-2 border-r border-l border-t bg-blue-50' :
-                        'text-gray-500 border-gray-200 bg-gray-50 border-r border-l border-t'"
-                    @click="activeTab = 0" role="tab">
-                    Tab 1
-                </button>
-                <button type="button"
-                    class="-mb-px py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center hover:text-gray-700"
-                    :class="activeTab === 1 ? 'text-blue-500 border-blue-500 border-b-2 border-r border-l border-t bg-blue-50' :
-                        'text-gray-500 border-gray-200 bg-gray-50 border-r border-l border-t'"
-                    @click="activeTab = 1" role="tab">
-                    Tab 2
-                </button>
-                <button type="button"
-                    class="-mb-px py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center hover:text-gray-700"
-                    :class="activeTab === 2 ? 'text-blue-500 border-blue-500 border-b-2 border-r border-l border-t bg-blue-50' :
-                        'text-gray-500 border-gray-200 bg-gray-50 border-r border-l border-t'"
-                    @click="activeTab = 2" role="tab">
-                    Tab 3
-                </button>
-            </nav>
+    <x-content-base title="Card Tab" eventName="showCode4">
+        <x-tabs-preview-code eventName="showCode4" />
+        <div x-show="!showCode4">
+            <x-tabs.card />
         </div>
-
-        <div class="mt-3">
-            <div id="card-type-tab-1" role="tabpanel" x-show="activeTab === 0"
-                x-transition:enter.opacity.duration.300>
-                <p class="text-gray-500">
-                    This is the <em class="font-semibold text-gray-800">first</em> item's tab body.
-                </p>
-            </div>
-            <div id="card-type-tab-2" role="tabpanel" x-show="activeTab === 1"
-                x-transition:enter.opacity.duration.300>
-                <p class="text-gray-500">
-                    This is the <em class="font-semibold text-gray-800">second</em> item's tab body.
-                </p>
-            </div>
-            <div id="card-type-tab-3" role="tabpanel" x-show="activeTab === 2"
-                x-transition:enter.opacity.duration.300>
-                <p class="text-gray-500">
-                    This is the <em class="font-semibold text-gray-800">third</em> item's tab body.
-                </p>
-            </div>
+        <div x-show="showCode4">
+            <x-torchlight.tab type="card" />
         </div>
-    </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Segment Tabs</h1>
-    <div class="p-6 mb-8 border" x-data="{ activeTab: 0 }">
-        <div class="flex">
-            <div class="flex bg-gray-100 transition p-2">
-                <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
-                    <button type="button" class="py-3 px-4 inline-flex items-center gap-2 text-sm font-medium"
-                        :class="activeTab === 0 ? 'bg-blue-500 text-white hover:text-white' :
-                            'text-gray-500 hover:text-gray-600'"
-                        @click="activeTab = 0" role="tab">
-                        Tab 1
-                    </button>
-                    <button type="button" class="py-3 px-4 inline-flex items-center gap-2 text-sm font-medium"
-                        :class="activeTab === 1 ? 'bg-blue-500 text-white hover:text-white' :
-                            'text-gray-500 hover:text-gray-600'"
-                        @click="activeTab = 1" role="tab">
-                        Tab 2
-                    </button>
-                    <button type="button" class="py-3 px-4 inline-flex items-center gap-2 text-sm font-medium"
-                        :class="activeTab === 2 ? 'bg-blue-500 text-white hover:text-white' :
-                            'text-gray-500 hover:text-gray-600'"
-                        @click="activeTab = 2" role="tab">
-                        Tab 3
-                    </button>
-                </nav>
-            </div>
+    <x-content-base title="Segment Tab" eventName="showCode5">
+        <x-tabs-preview-code eventName="showCode5" />
+        <div x-show="!showCode5">
+            <x-tabs.segment />
         </div>
-
-        <div class="mt-3">
-            <div id="segment-1" role="tabpanel" x-show="activeTab === 0" x-transition:enter.opacity.duration.300>
-                <p class="text-gray-500">
-                    This is the <em class="font-semibold text-gray-800">first</em> item's tab body.
-                </p>
-            </div>
-            <div id="segment-2" role="tabpanel" x-show="activeTab === 1" x-transition:enter.opacity.duration.300>
-                <p class="text-gray-500">
-                    This is the <em class="font-semibold text-gray-800">second</em> item's tab body.
-                </p>
-            </div>
-            <div id="segment-3" role="tabpanel" x-show="activeTab === 2" x-transition:enter.opacity.duration.300>
-                <p class="text-gray-500">
-                    This is the <em class="font-semibold text-gray-800">third</em> item's tab body.
-                </p>
-            </div>
+        <div x-show="showCode5">
+            <x-torchlight.tab type="segment" />
         </div>
-    </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Pill Tabs</h1>
-    <div class="p-6 border mb-8" x-data="{ activeTab: 0 }">
-        <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
-            <button type="button"
-                class="py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center text-gray-500"
-                :class="activeTab === 0 ? 'bg-blue-500 text-white' : 'hover:text-blue-600'" @click="activeTab = 0"
-                role="tab">
-                Tab 1
-            </button>
-            <button type="button"
-                class="py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center text-gray-500"
-                :class="activeTab === 1 ? 'bg-blue-500 text-white' : 'hover:text-blue-600'" @click="activeTab = 1"
-                role="tab">
-                Tab 2
-            </button>
-            <button type="button"
-                class="py-3 px-4 inline-flex items-center gap-2 text-sm font-medium text-center text-gray-500"
-                :class="activeTab === 2 ? 'bg-blue-500 text-white' : 'hover:text-blue-600'" @click="activeTab = 2"
-                role="tab">
-                Tab 3
-            </button>
-        </nav>
-
-        <div class="mt-3">
-            <div role="tabpanel" x-show="activeTab === 0" x-transition:enter.opacity.duration.300>
-                <p class="text-gray-500">
-                    This is the <em class="font-semibold text-gray-800">first</em> item's tab body.
-                </p>
-            </div>
-            <div role="tabpanel" x-show="activeTab === 1" x-transition:enter.opacity.duration.300>
-                <p class="text-gray-500">
-                    This is the <em class="font-semibold text-gray-800">second</em> item's tab body.
-                </p>
-            </div>
-            <div role="tabpanel" x-show="activeTab === 2" x-transition:enter.opacity.duration.300>
-                <p class="text-gray-500">
-                    This is the <em class="font-semibold text-gray-800">third</em> item's tab body.
-                </p>
-            </div>
+    <x-content-base title="Pill Tab" eventName="showCode6">
+        <x-tabs-preview-code eventName="showCode6" />
+        <div x-show="!showCode6">
+            <x-tabs.pill />
         </div>
-    </div>
-
-    <h1 class="mb-3">Vertical Tabs</h1>
-    <div class="p-6 border mb-8">
-        <div class="flex flex-wrap" x-data="{ activeTab: 0 }">
-            <div class="border-r border-gray-200 dark:border-gray-700">
-                <nav class="flex flex-col space-y-2" aria-label="Tabs" role="tablist">
-                    <button type="button"
-                        class="py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] text-sm whitespace-nowrap"
-                        :class="activeTab === 0 ? 'text-blue-500 border-blue-500' : 'border-transparent text-gray-600 hover:text-blue-500'"
-                        @click="activeTab = 0"
-                        role="tab">
-                        Tab 1
-                    </button>
-                    <button type="button"
-                        class="py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] text-sm whitespace-nowrap"
-                        :class="activeTab === 1 ? 'text-blue-500 border-blue-500' : 'border-transparent text-gray-600 hover:text-blue-500'"
-                        @click="activeTab = 1"
-                        role="tab">
-                        Tab 2
-                    </button>
-                    <button type="button"
-                        class="py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] text-sm whitespace-nowrap"
-                        :class="activeTab === 2 ? 'text-blue-500 border-blue-500' : 'border-transparent text-gray-600 hover:text-blue-500'"
-                        @click="activeTab = 2"
-                        role="tab">
-                        Tab 3
-                    </button>
-                </nav>
-            </div>
-
-            <div class="ml-3">
-                <div role="tabpanel" x-show="activeTab === 0" x-transition.in.opacity.duration.300>
-                    <p class="text-gray-500">
-                        This is the <em class="font-semibold text-gray-800">first</em> item's tab
-                        body.
-                    </p>
-                </div>
-                <div role="tabpanel" x-show="activeTab === 1" x-transition.in.opacity.duration.300>
-                    <p class="text-gray-500">
-                        This is the <em class="font-semibold text-gray-800">second</em> item's tab
-                        body.
-                    </p>
-                </div>
-                <div role="tabpanel" x-show="activeTab === 2" x-transition.in.opacity.duration.300>
-                    <p class="text-gray-500">
-                        This is the <em class="font-semibold text-gray-800">third</em> item's tab
-                        body.
-                    </p>
-                </div>
-            </div>
+        <div x-show="showCode6">
+            <x-torchlight.tab type="pill" />
         </div>
-    </div>
+    </x-content-base>
+
+    <x-content-base title="Vertical Tab" eventName="showCode7">
+        <x-tabs-preview-code eventName="showCode7" />
+        <div x-show="!showCode7">
+            <x-tabs.vertical />
+        </div>
+        <div x-show="showCode7">
+            <x-torchlight.tab type="vertical" />
+        </div>
+    </x-content-base>
 </x-app-layout>
