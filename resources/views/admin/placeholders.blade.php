@@ -5,67 +5,43 @@
         </h2>
     </x-slot>
 
-    <h1 class="mb-3">Basic Placeholder</h1>
-    <div class="p-6 border mb-8">
-        <h3 class="h-4 bg-gray-200" style="width: 15%;"></h3>
-        <ul class="mt-5 space-y-3">
-            <li class="w-96 h-4 bg-gray-200"></li>
-            <li class="w-96 h-4 bg-gray-200"></li>
-            <li class="w-96 h-4 bg-gray-200"></li>
-            <li class="w-96 h-4 bg-gray-200"></li>
-        </ul>
-    </div>
-
-    <h1 class="mb-3">Complex Placeholders</h1>
-    <div class="p-6 border mb-8">
-        <div class="flex">
-            <div class="flex-shrink-0">
-                <span class="w-12 h-12 block bg-gray-200"></span>
-            </div>
-
-            <div class="ml-4 mt-2 w-full">
-                <h3 class="h-4 bg-gray-200" style="width: 15%;"></h3>
-
-                <ul class="mt-5 space-y-3">
-                    <li class="w-96 h-4 bg-gray-200"></li>
-                    <li class="w-96 h-4 bg-gray-200"></li>
-                    <li class="w-96 h-4 bg-gray-200"></li>
-                    <li class="w-96 h-4 bg-gray-200"></li>
-                </ul>
-            </div>
+    <x-content-base title="Basic Usage" eventName="showCode">
+        <x-tabs-preview-code />
+        <div x-show="!showCode">
+            <x-placeholders.basic />
         </div>
-    </div>
-
-    <h1 class="mb-3">Animation Placeholders</h1>
-    <div class="p-6 border mb-8">
-        <div class="animate-pulse">
-            <h3 class="h-4 bg-gray-200" style="width: 15%;"></h3>
-            <ul class="mt-5 space-y-3">
-                <li class="w-96 h-4 bg-gray-200"></li>
-                <li class="w-96 h-4 bg-gray-200"></li>
-                <li class="w-96 h-4 bg-gray-200"></li>
-                <li class="w-96 h-4 bg-gray-200"></li>
-            </ul>
+        <div x-show="showCode">
+            <x-torchlight.placeholder type="basic" />
         </div>
-    </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Complex Animation Placeholders</h1>
-    <div class="p-6 border mb-8">
-        <div class="flex animate-pulse">
-            <div class="flex-shrink-0">
-                <span class="w-12 h-12 block bg-gray-200"></span>
-            </div>
-
-            <div class="ml-4 mt-2 w-full">
-                <h3 class="h-4 bg-gray-200" style="width: 15%;"></h3>
-
-                <ul class="mt-5 space-y-3">
-                    <li class="w-96 h-4 bg-gray-200"></li>
-                    <li class="w-96 h-4 bg-gray-200"></li>
-                    <li class="w-96 h-4 bg-gray-200"></li>
-                    <li class="w-96 h-4 bg-gray-200"></li>
-                </ul>
-            </div>
+    <x-content-base title="Complex Placeholder" eventName="showCode2">
+        <x-tabs-preview-code eventName="showCode2" />
+        <div x-show="!showCode2">
+            <x-placeholders.complex />
         </div>
-    </div>
+        <div x-show="showCode2">
+            <x-torchlight.placeholder type="complex" />
+        </div>
+    </x-content-base>
+
+    <x-content-base title="Animation Placeholder" eventName="showCode3">
+        <x-tabs-preview-code eventName="showCode3" />
+        <div x-show="!showCode3">
+            <x-placeholders.animate />
+        </div>
+        <div x-show="showCode3">
+            <x-torchlight.placeholder type="animate" />
+        </div>
+    </x-content-base>
+
+    <x-content-base title="Animation Complex Placeholder" eventName="showCode4">
+        <x-tabs-preview-code eventName="showCode4" />
+        <div x-show="!showCode4">
+            <x-placeholders.animate-complex />
+        </div>
+        <div x-show="showCode4">
+            <x-torchlight.placeholder type="animate-complex" />
+        </div>
+    </x-content-base>
 </x-app-layout>
