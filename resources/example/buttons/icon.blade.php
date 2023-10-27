@@ -1,0 +1,42 @@
+<button type="button"
+    class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-zinc-900 text-white hover:bg-zinc-950 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 transition-all text-sm">
+    <div class="flex justify-between items-center">
+        <span class="mr-2">Black</span>
+        <x-icons.basket class="w-5 h-5 stroke-white stroke-2" />
+    </div>
+</button>
+<button type="button"
+    class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 transition-all text-sm">
+    <div class="flex justify-between items-center">
+        <span class="mr-2">Blue</span>
+        <x-icons.basket class="w-5 h-5 stroke-white stroke-2" />
+    </div>
+</button>
+<button type="button"
+    class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-yellow-500 text-white hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 transition-all text-sm">
+    <div class="flex justify-between items-center">
+        <span class="mr-2">Yellow</span>
+        <x-icons.basket class="w-5 h-5 stroke-white stroke-2" />
+    </div>
+</button>
+<button type="button"
+    class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-orange-500 text-white hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 transition-all text-sm">
+    <div class="flex justify-between items-center">
+        <span class="mr-2">Orange</span>
+        <x-icons.basket class="w-5 h-5 stroke-white stroke-2" />
+    </div>
+</button>
+<button type="button"
+    class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-red-500 text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 transition-all text-sm">
+    <div class="flex justify-between items-center">
+        <span class="mr-2">Red</span>
+        <x-icons.basket class="w-5 h-5 stroke-white stroke-2" />
+    </div>
+</button>
+<button type="button"
+    class="py-2 px-4 inline-flex justify-center items-center border border-transparent font-semibold bg-green-500 text-white hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 transition-all text-sm">
+    <div class="flex justify-between items-center">
+        <span class="mr-2">Green</span>
+        <x-icons.basket class="w-5 h-5 stroke-white stroke-2" />
+    </div>
+</button>
