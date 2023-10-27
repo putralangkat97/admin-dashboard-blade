@@ -5,170 +5,103 @@
         </h2>
     </x-slot>
 
-    <h1 class="mb-3">Basic Usage</h1>
-    <div class="p-6 border mb-8">
-        <div class="flex shadow w-80">
-            <span
-                class="px-4 inline-flex items-center min-w-fit border border-r-0 border-zinc-900 bg-zinc-900 text-sm text-white">Email</span>
-            <input type="text"
-                class="py-3 px-4 border-gray-300 pr-11 block w-full text-sm focus:z-10 focus:border-zinc-900 focus:ring-zinc-900">
+    <x-content-base title="Basic Usage" eventName="showCode">
+        <x-tabs-preview-code />
+        <div x-show="!showCode">
+            <x-group.basic />
         </div>
-    </div>
+        <div x-show="showCode">
+            <x-torchlight.group type="basic" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Multiple Input</h1>
-    <div class="p-6 border mb-8">
-        <div>
-            <div class="sm:flex shadow w-96">
-                <input type="text"
-                    class="py-3 px-4 pr-11 block w-full border-gray-300 -mt-px -ml-px sm:mt-0 sm:first:ml-0 text-sm relative focus:z-10 focus:border-zinc-900 focus:ring-zinc-900">
-                <button type="button"
-                    class="py-3 px-4 inline-flex items-center min-w-fit w-full border border-zinc-900 bg-zinc-900 text-sm text-white -mt-px -ml-px sm:w-auto sm:mt-0 sm:first:ml-0">
-                    <x-icons.arrow-left-right class="w-5 h-5" />
-                </button>
-                <input type="text"
-                    class="py-3 px-4 pr-11 block w-full border-gray-300 -mt-px -ml-px sm:mt-0 sm:first:ml-0 text-sm relative focus:z-10 focus:border-zinc-900 focus:ring-zinc-900">
-            </div>
+    <x-content-base title="Multiple Input" eventName="showCode2">
+        <x-tabs-preview-code eventName="showCode2" />
+        <div x-show="!showCode2">
+            <x-group.multiple />
         </div>
-    </div>
+        <div x-show="showCode2">
+            <x-torchlight.group type="multiple" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Leading Icon</h1>
-    <div class="p-6 border mb-8">
-        <div class="w-96">
-            <label for="email" class="block text-sm font-medium mb-2">Email address</label>
-            <div class="relative">
-                <input type="text" id="email" name="email"
-                    class="py-3 px-4 border-gray-300 placeholder:text-gray-400 pl-11 block w-full text-sm focus:z-10 focus:border-zinc-900 focus:ring-zinc-900"
-                    placeholder="you@site.com">
-                <div class="absolute text-gray-400 inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
-                    <x-icons.mail class="w-5 h-5" />
-                </div>
-            </div>
+    <x-content-base title="Leading Icon" eventName="showCode3">
+        <x-tabs-preview-code eventName="showCode3" />
+        <div x-show="!showCode3">
+            <x-group.leading-icon />
         </div>
-    </div>
+        <div x-show="showCode3">
+            <x-torchlight.group type="leading-icon" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Trailing Icon</h1>
-    <div class="p-6 border mb-8">
-        <div class="w-96">
-            <label for="credit-card" class="block text-sm font-medium mb-2">Card number</label>
-            <div class="relative">
-                <input type="text" id="credit-card" name="credit-card"
-                    class="py-3 px-4 pr-11 border-gray-300 placeholder:text-gray-400 block w-full text-sm focus:z-10 focus:border-zinc-900 focus:ring-zinc-900"
-                    placeholder="xxxx xxxx xxxx xxxx">
-                <div class="absolute text-gray-400 inset-y-0 right-0 flex items-center pointer-events-none z-20 pr-4">
-                    <x-icons.credit-card class="w-5 h-5" />
-                </div>
-            </div>
+    <x-content-base title="Trailing Icon" eventName="showCode4">
+        <x-tabs-preview-code eventName="showCode4" />
+        <div x-show="!showCode4">
+            <x-group.trailing-icon />
         </div>
-    </div>
+        <div x-show="showCode4">
+            <x-torchlight.group type="trailing-icon" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Leading and Trailing Icon</h1>
-    <div class="p-6 border mb-8">
-        <div class="w-96">
-            <label for="price" class="block text-sm font-medium mb-2">Price</label>
-            <div class="relative">
-                <div class="absolute text-gray-400 inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
-                    <x-icons.currency-pound class="w-5 h-5" />
-                </div>
-                <input type="text" id="price" name="price"
-                    class="py-3 px-4 pl-11 pr-14 border-gray-300 placeholder:text-gray-400 block w-full text-sm focus:z-10 focus:border-zinc-900 focus:ring-zinc-900"
-                    placeholder="0.00">
-                <div class="absolute text-gray-400 inset-y-0 right-0 flex items-center pointer-events-none z-20 pr-4">
-                    <span>GBP</span>
-                </div>
-            </div>
+    <x-content-base title="Trailing Icon" eventName="showCode5">
+        <x-tabs-preview-code eventName="showCode5" />
+        <div x-show="!showCode5">
+            <x-group.leading-trailing />
         </div>
-    </div>
+        <div x-show="showCode5">
+            <x-torchlight.group type="leading-trailing" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Add On</h1>
-    <div class="p-6 border mb-8">
-        <label for="website" class="block text-sm font-medium mb-2">Website URL</label>
-        <div class="flex shadow w-96">
-            <span
-                class="px-4 inline-flex items-center min-w-fit border border-r-0 border-gray-300 bg-gray-100 text-sm text-gray-600">http://</span>
-            <input type="text" id="website"
-                class="py-3 px-4 border-gray-300 pr-11 block w-full text-sm focus:z-10 focus:border-zinc-900 focus:ring-zinc-900"
-                placeholder="example.com">
+    <x-content-base title="Add On" eventName="showCode6">
+        <x-tabs-preview-code eventName="showCode6" />
+        <div x-show="!showCode6">
+            <x-group.add-on />
         </div>
-    </div>
+        <div x-show="showCode6">
+            <x-torchlight.group type="add-on" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Inline Add On</h1>
-    <div class="p-6 border mb-8">
-        <div class="w-96">
-            <label for="website2" class="block text-sm font-medium mb-2">Website URL</label>
-            <div class="relative">
-                <input type="text" id="website2" name="website2"
-                    class="py-3 px-4 pl-20 border-gray-300 placeholder:text-gray-400 block w-full text-sm focus:z-10 focus:border-zinc-900 focus:ring-zinc-900"
-                    placeholder="www.example.com">
-                <div class="absolute text-gray-400 inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
-                    <span>http://</span>
-                </div>
-            </div>
+    <x-content-base title="Inline Add On" eventName="showCode7">
+        <x-tabs-preview-code eventName="showCode7" />
+        <div x-show="!showCode7">
+            <x-group.inline-add-on />
         </div>
-    </div>
+        <div x-show="showCode7">
+            <x-torchlight.group type="inline-add-on" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Inline Leading Select</h1>
-    <div class="p-6 border mb-8">
-        <div class="w-96">
-            <label for="phone-number" class="block text-sm font-medium mb-2">Phone
-                Number</label>
-            <div class="relative">
-                <input type="text" id="phone-number" name="phone-number"
-                    class="py-3 px-4 pl-20 border-gray-300 placeholder:text-gray-400 block w-full text-sm focus:z-10 focus:border-zinc-900 focus:ring-zinc-900"
-                    placeholder="+1 (000) 000-0000">
-                <div class="absolute inset-y-0 left-0 flex items-center text-gray-500 pl-px">
-                    <label for="select-country" class="sr-only">Country</label>
-                    <select id="select-country" name="select-country"
-                        class="block w-full border-transparent focus:ring-blue-600 focus:border-blue-600">
-                        <option>US</option>
-                        <option>CA</option>
-                        <option>EU</option>
-                    </select>
-                </div>
-            </div>
+    <x-content-base title="Inline Leading Select" eventName="showCode8">
+        <x-tabs-preview-code eventName="showCode8" />
+        <div x-show="!showCode8">
+            <x-group.inline-leading-select />
         </div>
-    </div>
+        <div x-show="showCode8">
+            <x-torchlight.group type="inline-leading-select" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">Inline Leading and Trailing Select</h1>
-    <div class="p-6 border mb-8">
-        <div class="w-96">
-            <label for="price2" class="block text-sm font-medium mb-2">Price</label>
-            <div class="relative">
-                <input type="text" id="price2" name="price2"
-                    class="py-3 px-4 pl-11 pr-20 border-gray-300 placeholder:text-gray-400 block w-full text-sm focus:z-10 focus:border-zinc-900 focus:ring-zinc-900"
-                    placeholder="0.00">
-                <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
-                    <span class="text-gray-400">
-                        <x-icons.currency-pound class="w-5 h-5" />
-                    </span>
-                </div>
-                <div class="absolute inset-y-0 right-0 flex items-center text-gray-400 pr-px">
-                    <label for="select-country" class="sr-only">Country</label>
-                    <select id="select-country" name="select-country"
-                        class="block w-full border-transparent focus:ring-zinc-900 focus:border-zinc-900">
-                        <option>GBR</option>
-                        <option>USD</option>
-                        <option>EUR</option>
-                    </select>
-                </div>
-            </div>
+    <x-content-base title="Inline Trailing Select" eventName="showCode9">
+        <x-tabs-preview-code eventName="showCode9" />
+        <div x-show="!showCode9">
+            <x-group.inline-trailing-select />
         </div>
-    </div>
+        <div x-show="showCode9">
+            <x-torchlight.group type="inline-trailing-select" />
+        </div>
+    </x-content-base>
 
-    <h1 class="mb-3">With Loading Icon</h1>
-    <div class="p-6 border mb-8">
-        <div class="w-96">
-            <label for="search" class="block text-sm font-medium mb-2">Search</label>
-            <div class="relative">
-                <input type="text" id="search" name="search"
-                    class="py-3 px-4 pl-11 border-gray-300 placeholder:text-gray-400 block w-full text-sm focus:z-10 focus:border-zinc-900 focus:ring-zinc-900"
-                    placeholder="Input search">
-                <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none pl-4">
-                    <div class="animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent text-zinc-900 rounded-full"
-                        role="status" aria-label="loading">
-                        <span class="sr-only">Loading...</span>
-                    </div>
-                </div>
-            </div>
+    <x-content-base title="With Loading Icon" eventName="showCode10">
+        <x-tabs-preview-code eventName="showCode10" />
+        <div x-show="!showCode10">
+            <x-group.loading-icon />
         </div>
-    </div>
+        <div x-show="showCode10">
+            <x-torchlight.group type="loading-icon" />
+        </div>
+    </x-content-base>
 </x-app-layout>
