@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+[x-cloak] {
+    display: none !important;
+}
+
 /*
  Margin and rounding are personal preferences,
  overflow-x-auto is recommended.
