@@ -24,111 +24,111 @@
             <div class="ml-1 text-gray-500 text-sm mt-4 mb-2">Components</div>
             <div class="space-y-3 mb-4">
                 <a href="{{ route('dashboard') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('dashboard') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('dashboard') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Dashboard</span>
                 </a>
                 <a href="{{ route('accordion') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('accordion') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('accordion') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Accordion</span>
                 </a>
                 <a href="{{ route('alerts') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('alerts') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('alerts') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Alerts</span>
                 </a>
                 <a href="{{ route('avatars') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('avatars') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('avatars') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Avatars</span>
                 </a>
                 <a href="{{ route('badges') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('badges') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('badges') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Badges</span>
                 </a>
                 <a href="{{ route('buttons') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('buttons') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('buttons') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Buttons</span>
                 </a>
                 <a href="{{ route('cards') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('cards') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('cards') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Cards</span>
                 </a>
                 <a href="{{ route('lists') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('lists') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('lists') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Lists</span>
                 </a>
                 <a href="{{ route('placeholders') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('placeholders') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('placeholders') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Placeholders</span>
                 </a>
                 <a href="{{ route('progress') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('progress') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('progress') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Progress</span>
                 </a>
                 <a href="{{ route('spiners') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('spiners') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('spiners') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Spiners</span>
                 </a>
                 <a href="{{ route('toasts') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('toasts') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('toasts') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Toasts</span>
                 </a>
             </div>
             <div class="ml-1 text-gray-500 text-sm mt-4 mb-2">Navigations</div>
             <div class="space-y-3 mb-4">
                 <a href="{{ route('breadcrumb') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('breadcrumb') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('breadcrumb') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Breadcrumb</span>
                 </a>
                 <a href="{{ route('tabs') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('tabs') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('tabs') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Tabs</span>
                 </a>
             </div>
             <div class="ml-1 text-gray-500 text-sm mt-4">Form</div>
             <div class="space-y-3 mb-4">
                 <a href="{{ route('input') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Input</span>
                 </a>
                 <a href="{{ route('input-checkbox') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-checkbox') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-checkbox') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Input Checkbox</span>
                 </a>
                 <a href="{{ route('input-file') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-file') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-file') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Input File</span>
                 </a>
                 <a href="{{ route('input-group') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-group') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-group') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Input Group</span>
                 </a>
                 <a href="{{ route('input-radio') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-radio') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-radio') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Input Radio</span>
                 </a>
                 <a href="{{ route('input-select') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-select') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-select') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Input Select</span>
                 </a>
                 <a href="{{ route('input-switch') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-switch') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('input-switch') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Input Switch</span>
                 </a>
             </div>
             <div class="ml-1 text-gray-500 text-sm mt-4 mb-2">Table</div>
             <div class="space-y-3 mb-4">
                 <a href="{{ route('table') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('table') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('table') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Table</span>
                 </a>
             </div>
             <div class="ml-1 text-gray-500 text-sm mt-4 mb-2">Overlay</div>
             <div class="space-y-3 mb-4">
                 <a href="{{ route('dropdowns') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('dropdowns') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('dropdowns') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Dropdown</span>
                 </a>
                 <a href="{{ route('modals') }}"
-                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('modals') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                    class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 {{ request()->routeIs('modals') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                     <span class="font-semibold">Modal</span>
                 </a>
             </div>
@@ -136,7 +136,7 @@
                 <span class="text-white text-sm">{{ Auth::user()->name }}</span>
                 <div class="flex flex-row items-center text-white hover:text-white mt-2">
                     <a href="{{ route('profile.edit') }}"
-                        class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 text-white font-semibold w-full {{ request()->routeIs('profile.*') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}" wire:navigate.hover>
+                        class="flex flex-row items-center hover:bg-blue-200 hover:text-zinc-900 mt-3 lg:mt-0 px-4 py-2 transition-colors duration-300 text-white font-semibold w-full {{ request()->routeIs('profile.*') ? 'text-zinc-900 bg-blue-200' : 'text-white' }}">
                         <span>Profile</span>
                     </a>
                 </div>
